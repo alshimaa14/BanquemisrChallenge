@@ -30,7 +30,6 @@
 		DEB37EE62B92938100DA207C /* VideoClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB37EE52B92938100DA207C /* VideoClient.swift */; };
 		DEB37EE82B92943500DA207C /* VideosRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB37EE72B92943500DA207C /* VideosRepo.swift */; };
 		DEB37EED2B929CE100DA207C /* VideoResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB37EEC2B929CE100DA207C /* VideoResponseModel.swift */; };
-		DEB37EF02B929D4B00DA207C /* OriginalLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB37EEF2B929D4B00DA207C /* OriginalLanguage.swift */; };
 		DEB37EF22B929DAE00DA207C /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB37EF12B929DAE00DA207C /* VideoModel.swift */; };
 		DEB37EF42B92A3FE00DA207C /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB37EF32B92A3FE00DA207C /* UIImageViewExtension.swift */; };
 		DEB37EF62B92A78000DA207C /* VideoTypeURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB37EF52B92A78000DA207C /* VideoTypeURL.swift */; };
@@ -82,7 +81,6 @@
 		DEB37EE52B92938100DA207C /* VideoClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoClient.swift; sourceTree = "<group>"; };
 		DEB37EE72B92943500DA207C /* VideosRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosRepo.swift; sourceTree = "<group>"; };
 		DEB37EEC2B929CE100DA207C /* VideoResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoResponseModel.swift; sourceTree = "<group>"; };
-		DEB37EEF2B929D4B00DA207C /* OriginalLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OriginalLanguage.swift; sourceTree = "<group>"; };
 		DEB37EF12B929DAE00DA207C /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
 		DEB37EF32B92A3FE00DA207C /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		DEB37EF52B92A78000DA207C /* VideoTypeURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTypeURL.swift; sourceTree = "<group>"; };
@@ -233,7 +231,6 @@
 		DEB37EEE2B929D4300DA207C /* Enum */ = {
 			isa = PBXGroup;
 			children = (
-				DEB37EEF2B929D4B00DA207C /* OriginalLanguage.swift */,
 				DEB37EF52B92A78000DA207C /* VideoTypeURL.swift */,
 			);
 			path = Enum;
@@ -545,7 +542,6 @@
 				DEB37EF62B92A78000DA207C /* VideoTypeURL.swift in Sources */,
 				DEEA3B032B91464A005B951F /* VideosViewModel.swift in Sources */,
 				DEB37EF42B92A3FE00DA207C /* UIImageViewExtension.swift in Sources */,
-				DEB37EF02B929D4B00DA207C /* OriginalLanguage.swift in Sources */,
 				DEEA3B052B91482A005B951F /* UIView.swift in Sources */,
 				DEB37ECE2B928AF700DA207C /* FutureDecoded.swift in Sources */,
 				DEB37EF22B929DAE00DA207C /* VideoModel.swift in Sources */,

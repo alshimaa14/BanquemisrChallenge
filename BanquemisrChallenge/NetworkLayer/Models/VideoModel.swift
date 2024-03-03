@@ -12,7 +12,7 @@ struct VideoDataModel: Codable {
     let backdropPath: String?
     let genreIDS: [Int]?
     let id: Int?
-    let originalLanguage: OriginalLanguage?
+    let originalLanguage: String?
     let originalTitle, overview: String?
     let popularity: Double?
     let posterPath, releaseDate, title: String?
@@ -42,7 +42,7 @@ struct VideoModel {
     let backdropPath: String
     let genreIDS: [Int]
     let id: Int
-    let originalLanguage: OriginalLanguage
+    let originalLanguage: String
     let originalTitle, overview: String
     let popularity: Double
     let posterPath, releaseDate, title: String
@@ -54,7 +54,7 @@ struct VideoModel {
         backdropPath = response.backdropPath ?? ""
         genreIDS = response.genreIDS ?? []
         id = response.id ?? 0
-        originalLanguage = response.originalLanguage ?? .en
+        originalLanguage = response.originalLanguage ?? ""
         originalTitle = response.originalTitle ?? ""
         overview = response.overview ?? ""
         popularity = response.popularity ?? 0
