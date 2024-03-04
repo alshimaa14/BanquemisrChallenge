@@ -19,9 +19,9 @@ the main purpose of the MVVM is to move the data state from the View to the View
 
 
 ## Scenes:
-* Group of app scenes: 
-    Implement three tabs using native tabBar for displaying (now playing, popular, and upcoming movies).
-    Implement a detail screen that shows comprehensive information about the selected movie.
+* Group of app scenes:- 
+- Implement three tabs using native tabBar for displaying (now playing, popular, and upcoming movies).
+- Implement a detail screen that shows comprehensive information about the selected movie.
 
 ## About:
 - Building an ios app that displays a list of now playing, popular, and upcoming movies from The Movie Database (TMDb) API and allows users to view details of each movie upon clicking.
