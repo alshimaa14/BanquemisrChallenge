@@ -8,7 +8,7 @@
 import Foundation
 
 protocol VideoRepoProtocol {
-    func getVideoDataModel(videoType: VideoTypeURL) async throws -> [VideoDataEntity]
+    func getVideoDataModel() async throws -> [VideoDataEntity]
 }
 
 class VideoRepo: VideoRepoProtocol {
@@ -18,8 +18,8 @@ class VideoRepo: VideoRepoProtocol {
         self.client = client
     }
     
-    func getVideoDataModel(videoType: VideoTypeURL) async throws -> [VideoDataEntity] {
-        let response = try await client.getVideos(videoType: videoType)
+    func getVideoDataModel() async throws -> [VideoDataEntity] {
+        let response = try await client.getVideos()
         let videos = response.mapToVideosEntity()
         return videos.results
     }

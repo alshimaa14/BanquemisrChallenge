@@ -13,12 +13,9 @@ class VideosViewModel: BaseViewModel {
     @Published private var videos: [VideoDataEntity]?
     var navigator: MainNavigatorProtocol?
     private let repo: VideoRepoProtocol
-    private let videoType: VideoTypeURL
     
-    init(repo: VideoRepoProtocol,
-         videoType: VideoTypeURL) {
+    init(repo: VideoRepoProtocol) {
         self.repo = repo
-        self.videoType = videoType
     }
     
 }
@@ -47,7 +44,7 @@ extension VideosViewModel: VideosVMProtocol {
         Task {
             do {
                 indicator = .loading(userInterAction: false, hideView: false)
-                let data = try await repo.getVideoDataModel(videoType: videoType)
+                let data = try await repo.getVideoDataModel()
                 self.videos = data
                 indicator = .loaded
             } catch {
