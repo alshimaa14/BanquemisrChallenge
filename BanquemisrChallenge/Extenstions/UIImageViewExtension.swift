@@ -21,5 +21,4 @@ extension UIImageView {
         kf.indicatorType = .activity
         kf.setImage(with: imgurl, placeholder: placeholder)
     }
-    
 }

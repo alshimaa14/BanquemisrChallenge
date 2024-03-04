@@ -9,14 +9,14 @@ import UIKit
 
 extension UIViewController {
     func showAlert(with message: String) {
-        AlertBuilder(title: "Banquemisr", message: message, preferredStyle: .alert)
+        AlertBuilder(title: "Banque Misr", message: message, preferredStyle: .alert)
             .addAction(title: NSLocalizedString("Ok", comment: ""), style: .default)
             .build()
             .show()
     }
     
     func showPopableAlert(with message: String, completionHandeler: @escaping ()-> Void) {
-        AlertBuilder(title: "Banquemisr", message: message, preferredStyle: .alert)
+        AlertBuilder(title: "Banque Misr", message: message, preferredStyle: .alert)
             .addAction(title: NSLocalizedString("Ok", comment: ""), style: .default, handler: {
                 completionHandeler()
             })

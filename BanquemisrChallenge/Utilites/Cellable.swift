@@ -35,7 +35,3 @@ extension UITableViewCell {
         return instanceFromTable(tableView, identifier: identifier)
     }
 }
-
-public protocol DeletedDelegate: AnyObject {
-    func deleteItemAtIndex(_ indexPath: IndexPath)
-}

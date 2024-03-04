@@ -6,11 +6,8 @@ target 'BanquemisrChallenge' do
   use_frameworks!
 
   # Pods for BanquemisrChallenge
-
-  # Network
   
   #General
-  pod 'MBProgressHUD'
   pod 'Kingfisher'
 
 end
