@@ -24,7 +24,11 @@ extension NetworkClient: NetworkClientType {
        
         do {
             
-            let (data, response) = try await session.data(for: build(request))
+            let request = build(request)
+
+            let (data, response) = try await session.data(for: request)
+            
+            log(with: request, data: data)
                         
             guard let response = response as? HTTPURLResponse else {
                 throw NetworkError.noInternetConnection
@@ -52,3 +56,10 @@ extension NetworkClient: NetworkClientType {
     }
 }
 
+
+private extension NetworkClient {
+    func log(with request: URLRequest, data: Data) {
+        debugPrint(request.url?.absoluteString ?? "")
+        debugPrint(String(decoding: data, as: UTF8.self))
+    }
+}
