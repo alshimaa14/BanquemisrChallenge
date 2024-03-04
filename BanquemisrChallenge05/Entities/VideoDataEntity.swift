@@ -1,6 +1,6 @@
 //
 //  VideoDataEntity.swift
-//  BanquemisrChallenge
+//  BanquemisrChallenge05
 //
 //  Created by Alshimaa on 04/03/2024.
 //
@@ -19,20 +19,33 @@ struct VideoDataEntity {
     let posterPath, releaseDate, title: String
     let voteAverage: Double
     let voteCount: Int
+    
+    init(adult: Bool,
+         backdropPath: String,
+         genreIDS: [Int],
+         id: Int,
+         originalLanguage: String,
+         originalTitle: String,
+         overview: String,
+         popularity: Double,
+         posterPath: String,
+         releaseDate: String,
+         title: String,
+         voteAverage: Double,
+         voteCount: Int) {
         
-    init(response: VideoDataResponse) {
-        adult = response.adult ?? false
-        backdropPath = response.backdropPath ?? ""
-        genreIDS = response.genreIDS ?? []
-        id = response.id ?? 0
-        originalLanguage = response.originalLanguage ?? ""
-        originalTitle = response.originalTitle ?? ""
-        overview = response.overview ?? ""
-        popularity = response.popularity ?? 0
-        posterPath = response.posterPath ?? ""
-        releaseDate = response.releaseDate ?? ""
-        title = response.title ?? ""
-        voteAverage = response.voteAverage ?? 0
-        voteCount = response.voteCount ?? 0
+        self.adult = adult
+        self.backdropPath = backdropPath
+        self.genreIDS = genreIDS
+        self.id = id
+        self.originalLanguage = originalLanguage
+        self.originalTitle = originalTitle
+        self.overview = overview
+        self.popularity = popularity
+        self.posterPath = posterPath
+        self.releaseDate = releaseDate
+        self.title = title
+        self.voteAverage = voteAverage
+        self.voteCount = voteCount
     }
 }

@@ -20,7 +20,7 @@ class VideoRepo: VideoRepoProtocol {
     
     func getVideoDataModel(videoType: VideoTypeURL) async throws -> [VideoDataEntity] {
         let response = try await client.getVideos(videoType: videoType)
-        let videoModel = response.results?.map({ VideoDataEntity(response: $0) }) ?? []
-        return videoModel
+        let videos = response.mapToVideosEntity()
+        return videos.results
     }
 }

@@ -1,6 +1,6 @@
 //
-//  VideoModel.swift
-//  BanquemisrChallenge
+//  VideoDataResponse.swift
+//  BanquemisrChallenge05
 //
 //  Created by Alshimaa on 02/03/2024.
 //
