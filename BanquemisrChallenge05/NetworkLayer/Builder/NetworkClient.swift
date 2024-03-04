@@ -28,11 +28,11 @@ extension NetworkClient: NetworkClientType {
 
             let (data, response) = try await session.data(for: request)
             
-            log(with: request, data: data)
-                        
             guard let response = response as? HTTPURLResponse else {
                 throw NetworkError.noInternetConnection
             }
+            
+            log(with: request, data, response)
             
             if let error = VerifyResponse.checkResponseError(for: response, data: data) {
                 throw error
@@ -58,8 +58,19 @@ extension NetworkClient: NetworkClientType {
 
 
 private extension NetworkClient {
-    func log(with request: URLRequest, data: Data) {
-        debugPrint(request.url?.absoluteString ?? "")
+    func log(with request: URLRequest, _ data: Data, _ response: HTTPURLResponse) {
+        debugPrint("============Request==============")
+        let urlAsString = request.url?.absoluteString ?? ""
+        let urlComponents = NSURLComponents(string: urlAsString)
+        let method = request.httpMethod != nil ? "HttpMethod:- \(request.httpMethod ?? "")" : ""
+        let path = "Path:- \(urlComponents?.path ?? "")"
+        let query = "Query:- \(urlComponents?.query ?? "")"
+        debugPrint(urlAsString)
+        debugPrint(method)
+        debugPrint(path)
+        debugPrint(query)
+        debugPrint("============Response==============")
+        debugPrint("status code:- \(response.statusCode)")
         debugPrint(String(decoding: data, as: UTF8.self))
     }
 }
