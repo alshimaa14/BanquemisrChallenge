@@ -14,6 +14,7 @@
 ## Architecture
 - This application uses the Model-View-ViewModel (referred to as MVVM) architecture, with (Combine)
 the main purpose of the MVVM is to move the data state from the View to the ViewModel.
+- Every ViewModel contains a Repo which has responsibility to fetch the data 
 - (Network part, Load images)  implemented natively using Swift.
 
 
