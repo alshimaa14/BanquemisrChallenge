@@ -88,7 +88,7 @@
 		DEB37EF12B929DAE00DA207C /* VideoDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDataModel.swift; sourceTree = "<group>"; };
 		DEB37EF32B92A3FE00DA207C /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		DEB37EF52B92A78000DA207C /* VideoTypeURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTypeURL.swift; sourceTree = "<group>"; };
-		DEEA3AB22B910DA7005B951F /* BanquemisrChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BanquemisrChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEEA3AB22B910DA7005B951F /* BanquemisrChallenge05.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BanquemisrChallenge05.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEEA3AB52B910DA7005B951F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DEEA3ABE2B910DA8005B951F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEEA3AC12B910DA8005B951F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -258,7 +258,7 @@
 		DEEA3AA92B910DA7005B951F = {
 			isa = PBXGroup;
 			children = (
-				DEEA3AB42B910DA7005B951F /* BanquemisrChallenge */,
+				DEEA3AB42B910DA7005B951F /* BanquemisrChallenge05 */,
 				DEEA3AB32B910DA7005B951F /* Products */,
 				857ADB289F08A5631D0641BB /* Frameworks */,
 			);
@@ -267,12 +267,12 @@
 		DEEA3AB32B910DA7005B951F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DEEA3AB22B910DA7005B951F /* BanquemisrChallenge.app */,
+				DEEA3AB22B910DA7005B951F /* BanquemisrChallenge05.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DEEA3AB42B910DA7005B951F /* BanquemisrChallenge */ = {
+		DEEA3AB42B910DA7005B951F /* BanquemisrChallenge05 */ = {
 			isa = PBXGroup;
 			children = (
 				DEB37EC92B928A7B00DA207C /* NetworkLayer */,
@@ -288,7 +288,7 @@
 				DEEA3ACF2B911389005B951F /* Resources */,
 				DEEA3AC32B910DA8005B951F /* Info.plist */,
 			);
-			path = BanquemisrChallenge;
+			path = BanquemisrChallenge05;
 			sourceTree = "<group>";
 		};
 		DEEA3AC92B911227005B951F /* PlayingMovies */ = {
@@ -415,9 +415,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DEEA3AB12B910DA7005B951F /* BanquemisrChallenge */ = {
+		DEEA3AB12B910DA7005B951F /* BanquemisrChallenge05 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DEEA3AC62B910DA8005B951F /* Build configuration list for PBXNativeTarget "BanquemisrChallenge" */;
+			buildConfigurationList = DEEA3AC62B910DA8005B951F /* Build configuration list for PBXNativeTarget "BanquemisrChallenge05" */;
 			buildPhases = (
 				DEEA3AAE2B910DA7005B951F /* Sources */,
 				DEEA3AAF2B910DA7005B951F /* Frameworks */,
@@ -427,9 +427,9 @@
 			);
 			dependencies = (
 			);
-			name = BanquemisrChallenge;
+			name = BanquemisrChallenge05;
 			productName = BanquemisrChallenge;
-			productReference = DEEA3AB22B910DA7005B951F /* BanquemisrChallenge.app */;
+			productReference = DEEA3AB22B910DA7005B951F /* BanquemisrChallenge05.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -447,7 +447,7 @@
 					};
 				};
 			};
-			buildConfigurationList = DEEA3AAD2B910DA7005B951F /* Build configuration list for PBXProject "BanquemisrChallenge" */;
+			buildConfigurationList = DEEA3AAD2B910DA7005B951F /* Build configuration list for PBXProject "BanquemisrChallenge05" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -460,7 +460,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DEEA3AB12B910DA7005B951F /* BanquemisrChallenge */,
+				DEEA3AB12B910DA7005B951F /* BanquemisrChallenge05 */,
 			);
 		};
 /* End PBXProject section */
@@ -668,7 +668,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BanquemisrChallenge/Info.plist;
+				INFOPLIST_FILE = BanquemisrChallenge05/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Banquemisr Challenge05";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -698,7 +698,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BanquemisrChallenge/Info.plist;
+				INFOPLIST_FILE = BanquemisrChallenge05/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Banquemisr Challenge05";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -723,7 +723,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DEEA3AAD2B910DA7005B951F /* Build configuration list for PBXProject "BanquemisrChallenge" */ = {
+		DEEA3AAD2B910DA7005B951F /* Build configuration list for PBXProject "BanquemisrChallenge05" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DEEA3AC42B910DA8005B951F /* Debug */,
@@ -732,7 +732,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DEEA3AC62B910DA8005B951F /* Build configuration list for PBXNativeTarget "BanquemisrChallenge" */ = {
+		DEEA3AC62B910DA8005B951F /* Build configuration list for PBXNativeTarget "BanquemisrChallenge05" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DEEA3AC72B910DA8005B951F /* Debug */,
