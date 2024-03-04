@@ -25,9 +25,7 @@ extension NetworkClient: NetworkClientType {
         do {
             
             let (data, response) = try await session.data(for: build(request))
-            
-//            NetworkLogger.log(request: build(request), response: response, data: data)
-            
+                        
             guard let response = response as? HTTPURLResponse else {
                 throw NetworkError.noInternetConnection
             }
@@ -44,7 +42,6 @@ extension NetworkClient: NetworkClientType {
             return decodedData
             
         } catch {
-//            NetworkLogger.log(error: error)
             if let noInternetError = error as NSError?,
                noInternetError.code == NSURLErrorNotConnectedToInternet,
                noInternetError.domain == NSURLErrorDomain {
