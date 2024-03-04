@@ -15,7 +15,7 @@ class VideoTableViewCell: UITableViewCell {
     @IBOutlet private weak var containerView: UIView!
     @IBOutlet private weak var detailsView: UIView!
     
-    var videoModel: VideoModel? {
+    var videoModel: VideoDataEntity? {
         didSet {
             guard let model = videoModel else { return }
             configure(with: model)
@@ -35,7 +35,7 @@ class VideoTableViewCell: UITableViewCell {
 
     }
     
-    private func configure(with model: VideoModel) {
+    private func configure(with model: VideoDataEntity) {
         let path = Constants.url + model.posterPath
         posterImageView.setImage(forURL: path)
         videoNameLabel.text = model.title

@@ -1,5 +1,5 @@
 //
-//  VideoModel.swift
+//  VideoDataEntity.swift
 //  BanquemisrChallenge
 //
 //  Created by Alshimaa on 04/03/2024.
@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct VideoModel {
+struct VideoDataEntity {
+    
     let adult: Bool
     let backdropPath: String
     let genreIDS: [Int]
@@ -18,8 +19,8 @@ struct VideoModel {
     let posterPath, releaseDate, title: String
     let voteAverage: Double
     let voteCount: Int
-    
-    init(response: VideoDataModel) {
+        
+    init(response: VideoDataResponse) {
         adult = response.adult ?? false
         backdropPath = response.backdropPath ?? ""
         genreIDS = response.genreIDS ?? []

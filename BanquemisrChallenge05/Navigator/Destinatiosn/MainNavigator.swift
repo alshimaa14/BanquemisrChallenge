@@ -8,7 +8,7 @@
 import UIKit
 
 enum MainDestination {
-    case details(VideoModel)
+    case details(VideoDataEntity)
 }
 
 protocol MainNavigatorProtocol {

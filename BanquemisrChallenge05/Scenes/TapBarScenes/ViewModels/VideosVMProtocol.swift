@@ -10,7 +10,7 @@ import Combine
 
 protocol VideosVMProtocol: BaseViewModelProtocol {
     func getVideos()
-    func getVideoItem(at indexPath: IndexPath) -> VideoModel?
+    func getVideoItem(at indexPath: IndexPath) -> VideoDataEntity?
     func navigateToVideoDetails(at indexPath: IndexPath)
     var videosPublisher: AnyPublisher<Bool, Never> { get }
     var numberOfVideosRows: Int { get }

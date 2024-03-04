@@ -10,7 +10,6 @@ import UIKit
 class VideoDetailsViewController: BaseViewController {
     
     let viewModel: VideoDetailsViewModel
-    var video: VideoModel?
     
     @IBOutlet weak var posterImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!

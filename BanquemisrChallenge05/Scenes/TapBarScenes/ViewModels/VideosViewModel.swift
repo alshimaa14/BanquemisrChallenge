@@ -10,7 +10,7 @@ import Combine
 
 class VideosViewModel: BaseViewModel {
     
-    @Published private var videos: [VideoModel]?
+    @Published private var videos: [VideoDataEntity]?
     var navigator: MainNavigatorProtocol?
     private let repo: VideoRepoProtocol
     private let videoType: VideoTypeURL
@@ -34,7 +34,7 @@ extension VideosViewModel: VideosVMProtocol {
             .eraseToAnyPublisher()
     }
     
-    func getVideoItem(at indexPath: IndexPath) -> VideoModel? {
+    func getVideoItem(at indexPath: IndexPath) -> VideoDataEntity? {
         return videos?[indexPath.item]
     }
     

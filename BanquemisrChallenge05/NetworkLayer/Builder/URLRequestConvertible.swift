@@ -30,9 +30,9 @@ extension URLRequestConvertible {
         request.httpBody = endpoint.body?.toData()
         return request
     }
-        
+       
+    /// Handle any additional headers here
     private func apiHeaders(headers: [String: String]) -> [String: String] {
-        var headers = headers
         return headers
     }
 }

@@ -36,7 +36,7 @@ class MainFactory {
         return MainNavigationController(rootViewController: vc)
     }
     
-    static func videoDetails(video: VideoModel) -> UIViewController {
+    static func videoDetails(video: VideoDataEntity) -> UIViewController {
         let vm = VideoDetailsViewModel(video: video)
         let vc = VideoDetailsViewController(viewModel: vm)
         vm.navigator = MainNavigator(vc)

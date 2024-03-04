@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct VideoDataModel: Codable {
+struct VideoDataResponse: Decodable {
     let adult: Bool?
     let backdropPath: String?
     let genreIDS: [Int]?
