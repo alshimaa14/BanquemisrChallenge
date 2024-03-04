@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CBFE8EF0692484BDC97A0B77 /* Pods_BanquemisrChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65A8CBBD7D5B7CE26185523D /* Pods_BanquemisrChallenge.framework */; };
 		DE2B9A852B9493E400007E63 /* VideoDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2B9A842B9493E400007E63 /* VideoDetailsViewModel.swift */; };
 		DE514B252B951D2200535BAA /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE514B1D2B951D2200535BAA /* HTTPMethod.swift */; };
 		DE514B2B2B953A1900535BAA /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE514B2A2B953A1900535BAA /* EndPoint.swift */; };
@@ -20,6 +19,7 @@
 		DE514B3A2B954F0000535BAA /* URLRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE514B392B954F0000535BAA /* URLRequestBuilder.swift */; };
 		DE514B3D2B95C14400535BAA /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE514B3C2B95C14400535BAA /* VideoModel.swift */; };
 		DE514B3F2B95DCF400535BAA /* IndicatorState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE514B3E2B95DCF400535BAA /* IndicatorState.swift */; };
+		DE514B422B95E39900535BAA /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE514B412B95E39900535BAA /* ImageDownloader.swift */; };
 		DE6697C32B94FED200C2F8AF /* PopularViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE6697C12B94FED200C2F8AF /* PopularViewController.xib */; };
 		DE6697C42B94FED200C2F8AF /* PopularViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6697C22B94FED200C2F8AF /* PopularViewController.swift */; };
 		DE6697C72B95016A00C2F8AF /* VideosVMProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6697C62B95016A00C2F8AF /* VideosVMProtocol.swift */; };
@@ -59,9 +59,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		505F9C941CF57F5B1E39840F /* Pods-BanquemisrChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BanquemisrChallenge.debug.xcconfig"; path = "Target Support Files/Pods-BanquemisrChallenge/Pods-BanquemisrChallenge.debug.xcconfig"; sourceTree = "<group>"; };
-		65A8CBBD7D5B7CE26185523D /* Pods_BanquemisrChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BanquemisrChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7231B26DA25236CA410B6984 /* Pods-BanquemisrChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BanquemisrChallenge.release.xcconfig"; path = "Target Support Files/Pods-BanquemisrChallenge/Pods-BanquemisrChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		DE2B9A842B9493E400007E63 /* VideoDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDetailsViewModel.swift; sourceTree = "<group>"; };
 		DE514B1D2B951D2200535BAA /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		DE514B2A2B953A1900535BAA /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
@@ -74,6 +71,7 @@
 		DE514B392B954F0000535BAA /* URLRequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestBuilder.swift; sourceTree = "<group>"; };
 		DE514B3C2B95C14400535BAA /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
 		DE514B3E2B95DCF400535BAA /* IndicatorState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorState.swift; sourceTree = "<group>"; };
+		DE514B412B95E39900535BAA /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		DE6697C12B94FED200C2F8AF /* PopularViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopularViewController.xib; sourceTree = "<group>"; };
 		DE6697C22B94FED200C2F8AF /* PopularViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopularViewController.swift; sourceTree = "<group>"; };
 		DE6697C62B95016A00C2F8AF /* VideosVMProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosVMProtocol.swift; sourceTree = "<group>"; };
@@ -119,7 +117,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBFE8EF0692484BDC97A0B77 /* Pods_BanquemisrChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,18 +126,8 @@
 		857ADB289F08A5631D0641BB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				65A8CBBD7D5B7CE26185523D /* Pods_BanquemisrChallenge.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		CE4E61B7436B9F79A58D0BCA /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				505F9C941CF57F5B1E39840F /* Pods-BanquemisrChallenge.debug.xcconfig */,
-				7231B26DA25236CA410B6984 /* Pods-BanquemisrChallenge.release.xcconfig */,
-			);
-			path = Pods;
 			sourceTree = "<group>";
 		};
 		DE514B2C2B953F9300535BAA /* Helper */ = {
@@ -273,7 +260,6 @@
 			children = (
 				DEEA3AB42B910DA7005B951F /* BanquemisrChallenge */,
 				DEEA3AB32B910DA7005B951F /* Products */,
-				CE4E61B7436B9F79A58D0BCA /* Pods */,
 				857ADB289F08A5631D0641BB /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -289,8 +275,8 @@
 		DEEA3AB42B910DA7005B951F /* BanquemisrChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				DE514B3B2B9553C500535BAA /* Entities */,
 				DEB37EC92B928A7B00DA207C /* NetworkLayer */,
+				DE514B3B2B9553C500535BAA /* Entities */,
 				DEB37EF72B932E8000DA207C /* ReusableViews */,
 				DEEA3AFC2B913827005B951F /* Scenes */,
 				DEEA3AEE2B912F86005B951F /* Base */,
@@ -364,6 +350,7 @@
 				DEEA3AFA2B913455005B951F /* Cellable.swift */,
 				DEEA3B062B914C57005B951F /* AlertBuilder.swift */,
 				DEB37EDD2B928BA900DA207C /* Constants.swift */,
+				DE514B412B95E39900535BAA /* ImageDownloader.swift */,
 			);
 			path = Utilites;
 			sourceTree = "<group>";
@@ -432,11 +419,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DEEA3AC62B910DA8005B951F /* Build configuration list for PBXNativeTarget "BanquemisrChallenge" */;
 			buildPhases = (
-				6EB22CC69D5FCAD5C0B783EF /* [CP] Check Pods Manifest.lock */,
 				DEEA3AAE2B910DA7005B951F /* Sources */,
 				DEEA3AAF2B910DA7005B951F /* Frameworks */,
 				DEEA3AB02B910DA7005B951F /* Resources */,
-				1660248015C920B7E89700FE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -497,48 +482,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		1660248015C920B7E89700FE /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BanquemisrChallenge/Pods-BanquemisrChallenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BanquemisrChallenge/Pods-BanquemisrChallenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BanquemisrChallenge/Pods-BanquemisrChallenge-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6EB22CC69D5FCAD5C0B783EF /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-BanquemisrChallenge-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		DEEA3AAE2B910DA7005B951F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -560,6 +503,7 @@
 				DE514B362B9544DA00535BAA /* VerifyResponse.swift in Sources */,
 				DE514B2B2B953A1900535BAA /* EndPoint.swift in Sources */,
 				DEB37EE22B92922C00DA207C /* PlayingVideosViewController.swift in Sources */,
+				DE514B422B95E39900535BAA /* ImageDownloader.swift in Sources */,
 				DEEA3AD22B911687005B951F /* BaseNavigator.swift in Sources */,
 				DE6697C42B94FED200C2F8AF /* PopularViewController.swift in Sources */,
 				DEEA3AF22B912FA4005B951F /* BaseViewModel.swift in Sources */,
@@ -718,7 +662,6 @@
 		};
 		DEEA3AC72B910DA8005B951F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 505F9C941CF57F5B1E39840F /* Pods-BanquemisrChallenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -735,7 +678,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Spark.BanquemisrChallenge;
+				PRODUCT_BUNDLE_IDENTIFIER = banquemisr.challenge05;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -745,7 +688,6 @@
 		};
 		DEEA3AC82B910DA8005B951F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7231B26DA25236CA410B6984 /* Pods-BanquemisrChallenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -762,7 +704,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Spark.BanquemisrChallenge;
+				PRODUCT_BUNDLE_IDENTIFIER = banquemisr.challenge05;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

@@ -37,7 +37,7 @@ class VideoDetailsViewController: BaseViewController {
 extension VideoDetailsViewController {
     private func setViewData() {
         let path = Constants.url + viewModel.video.posterPath
-        posterImageView.load(imageUrl: path)
+        posterImageView.load(url: path)
         title = viewModel.video.title
         titleLabel.text = viewModel.video.title
         lastReleaseLabel.text = viewModel.video.releaseDate

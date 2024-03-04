@@ -20,7 +20,7 @@
                     <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qdv-fg-RfH">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="176"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pg" translatesAutoresizingMaskIntoConstraints="NO" id="8zY-Tz-UE0">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8zY-Tz-UE0">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="176"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadious">
@@ -94,7 +94,6 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="pg" width="175" height="200"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

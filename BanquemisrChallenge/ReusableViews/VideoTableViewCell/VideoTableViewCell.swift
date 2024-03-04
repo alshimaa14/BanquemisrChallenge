@@ -37,7 +37,7 @@ class VideoTableViewCell: UITableViewCell {
     
     private func configure(with model: VideoModel) {
         let path = Constants.url + model.posterPath
-        posterImageView.load(imageUrl: path)
+        posterImageView.setImage(forURL: path)
         videoNameLabel.text = model.title
         releasedDateLabel.text = model.releaseDate
     }
