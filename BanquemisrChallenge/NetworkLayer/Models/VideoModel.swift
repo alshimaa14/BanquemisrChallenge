@@ -64,5 +64,4 @@ struct VideoModel {
         voteAverage = response.voteAverage ?? 0
         voteCount = response.voteCount ?? 0
     }
-    
 }

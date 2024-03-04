@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct VideoResponseDataModel: Codable {
+struct VideoResponseDataModel: Decodable {
     let dates: Dates?
     let page: Int?
     let results: [VideoDataModel]?

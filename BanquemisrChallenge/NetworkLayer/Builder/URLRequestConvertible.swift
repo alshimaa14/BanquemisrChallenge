@@ -2,50 +2,37 @@
 //  URLRequestConvertible.swift
 //  BanquemisrChallenge
 //
-//  Created by Alshimaa on 02/03/2024.
+//  Created by Alshimaa on 04/03/2024.
 //
 
-import Alamofire
 import Foundation
 
-protocol URLRequestConvertible: Alamofire.URLRequestConvertible {
-    var method: HTTPMethod { get }
-    var parameters: [String: Any]? { get }
-    var urlPath: String { get }
-    var url: URL { get }
-    var encoding: ParameterEncoding { get }
+//To provide the url is needed by the networkClient to build request
+public protocol URLRequestConvertible {
+    func build(_ endpoint: Endpoint) -> URLRequest
 }
 
+//Handle The build to be a default implement of building.
 extension URLRequestConvertible {
-    var url: URL {
-        return URL(string: Constants.baseUrl)!.appendingPathComponent(urlPath)
+    public func build(_ endpoint: Endpoint) -> URLRequest {
+        let url = URL(string: endpoint.baseUrl)!.appendingPathComponent(endpoint.path)
+        var urlComponents = URLComponents(url: url,
+                                          resolvingAgainstBaseURL: false)
+        urlComponents?.queryItems = endpoint.urlParameters.map {key, value in
+            URLQueryItem(name: key,
+                         value: value.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed))
+        }
+        var request = URLRequest(url: (urlComponents?.url!)!,
+                                 cachePolicy: .reloadIgnoringLocalAndRemoteCacheData,
+                                 timeoutInterval: endpoint.timeInterval)
+        request.httpMethod = endpoint.method.rawValue
+        request.allHTTPHeaderFields = apiHeaders(headers: endpoint.headers)
+        request.httpBody = endpoint.body?.toData()
+        return request
     }
-
-    public func asURLRequest() throws -> URLRequest {
-        var urlRequest = URLRequest(url: url)
-        urlRequest.httpMethod = method.rawValue
-        return try encoding.encode(urlRequest, with: parameters)
+        
+    private func apiHeaders(headers: [String: String]) -> [String: String] {
+        var headers = headers
+        return headers
     }
-}
-
-
-public struct RequestBuilder: URLRequestConvertible {
-    let method: Alamofire.HTTPMethod
-    let urlPath: String
-    let parameters: [String : Any]?
-    let encoding: Alamofire.ParameterEncoding
-    let url: URL
-    
-    init(method: Alamofire.HTTPMethod = .get,
-         urlPath: String,
-         parameters: [String : Any]? = nil,
-         encoding: Alamofire.ParameterEncoding = URLEncoding.default,
-         baseUrl: String = Constants.baseUrl) {
-        self.method = method
-        self.parameters = parameters
-        self.urlPath = urlPath
-        self.encoding = encoding
-        self.url = URL(string: baseUrl)!.appendingPathComponent(urlPath)
-    }
-    
 }

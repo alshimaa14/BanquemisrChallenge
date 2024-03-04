@@ -7,8 +7,7 @@ target 'BanquemisrChallenge' do
 
   # Pods for BanquemisrChallenge
 
-  #  Network
-  pod 'Alamofire'
+  # Network
   
   #General
   pod 'MBProgressHUD'

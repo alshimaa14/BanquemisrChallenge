@@ -7,8 +7,19 @@
 
 import Foundation
 
-enum VideoTypeURL: String, Codable {
-    case nowPlaying = "now_playing"
-    case popular = "popular"
-    case upcoming = "upcoming"
+enum VideoTypeURL {
+    case nowPlaying
+    case popular
+    case upcoming
+    
+    var getTypeBath: String {
+        switch self {
+        case .nowPlaying:
+            return "now_playing"
+        case .popular:
+            return "popular"
+        case .upcoming:
+            return "upcoming"
+        }
+    }
 }

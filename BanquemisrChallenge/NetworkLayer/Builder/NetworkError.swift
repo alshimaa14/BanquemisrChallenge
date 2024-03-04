@@ -16,22 +16,21 @@ enum NetworkError: Error, LocalizedError {
     case unauthorized
     case unverified
     case decodingFailed
-    case emptyPlacemarks
 
     var errorDescription: String? {
         switch self {
         case .noInternetConnection:
             return NSLocalizedString("No Internet connection", comment: "")
-        case .invalidData, .internalServerError:
-            return NSLocalizedString("SomethingWentWrong", comment: "")
+        case .invalidData:
+            return NSLocalizedString("Invalid Data", comment: "")
+        case .internalServerError:
+            return NSLocalizedString("Something Went Wrong", comment: "")
         case let .unknownError(error):
             return error
         case .cancelled:
-            return NSLocalizedString("cancelled", comment: "")
+            return NSLocalizedString("Cancelled", comment: "")
         case .unauthorized:
             return NSLocalizedString("Unauthorized", comment: "")
-        case .emptyPlacemarks:
-            return NSLocalizedString("noPlaceMarks", comment: "")
         default:
             return ""
         }

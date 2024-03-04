@@ -12,12 +12,12 @@ protocol VideoClientType {
 }
 
 class VideoClient: VideoClientType {
-
-    private let client = NetworkHandler()
+    
+    private let client = NetworkClient()
     
     func getVideos(videoType: VideoTypeURL) async throws -> VideoResponseDataModel {
-        let request = RequestBuilder(urlPath: videoType.rawValue)
-        return try await client.request(request)
+        let request = URLRequestBuilder(path: videoType.getTypeBath)
+        return try await client.sendRequest(request)
     }
     
 }

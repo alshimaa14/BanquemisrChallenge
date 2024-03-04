@@ -9,21 +9,22 @@
 /* Begin PBXBuildFile section */
 		CBFE8EF0692484BDC97A0B77 /* Pods_BanquemisrChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65A8CBBD7D5B7CE26185523D /* Pods_BanquemisrChallenge.framework */; };
 		DE2B9A852B9493E400007E63 /* VideoDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2B9A842B9493E400007E63 /* VideoDetailsViewModel.swift */; };
+		DE514B252B951D2200535BAA /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE514B1D2B951D2200535BAA /* HTTPMethod.swift */; };
+		DE514B2B2B953A1900535BAA /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE514B2A2B953A1900535BAA /* EndPoint.swift */; };
+		DE514B2E2B953FAA00535BAA /* Encodable+Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE514B2D2B953FAA00535BAA /* Encodable+Dictionary.swift */; };
+		DE514B302B95408700535BAA /* NetworkClientType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE514B2F2B95408700535BAA /* NetworkClientType.swift */; };
+		DE514B322B9540B800535BAA /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE514B312B9540B800535BAA /* NetworkClient.swift */; };
+		DE514B342B9543F400535BAA /* URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE514B332B9543F400535BAA /* URLRequestConvertible.swift */; };
+		DE514B362B9544DA00535BAA /* VerifyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE514B352B9544DA00535BAA /* VerifyResponse.swift */; };
+		DE514B382B95482C00535BAA /* ServerErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE514B372B95482C00535BAA /* ServerErrorResponse.swift */; };
+		DE514B3A2B954F0000535BAA /* URLRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE514B392B954F0000535BAA /* URLRequestBuilder.swift */; };
 		DE6697C32B94FED200C2F8AF /* PopularViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE6697C12B94FED200C2F8AF /* PopularViewController.xib */; };
 		DE6697C42B94FED200C2F8AF /* PopularViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6697C22B94FED200C2F8AF /* PopularViewController.swift */; };
 		DE6697C72B95016A00C2F8AF /* VideosVMProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6697C62B95016A00C2F8AF /* VideosVMProtocol.swift */; };
 		DE707C152B926F3900F83BC7 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE707C142B926F3900F83BC7 /* TabBarController.swift */; };
 		DEB37EC22B9275BC00DA207C /* UpcomingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB37EC02B9275BC00DA207C /* UpcomingViewController.swift */; };
 		DEB37EC32B9275BC00DA207C /* UpcomingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEB37EC12B9275BC00DA207C /* UpcomingViewController.xib */; };
-		DEB37ECC2B928AED00DA207C /* Future.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB37ECB2B928AED00DA207C /* Future.swift */; };
-		DEB37ECE2B928AF700DA207C /* FutureDecoded.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB37ECD2B928AF700DA207C /* FutureDecoded.swift */; };
 		DEB37ED02B928B0100DA207C /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB37ECF2B928B0100DA207C /* NetworkError.swift */; };
-		DEB37ED22B928B0C00DA207C /* NetworkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB37ED12B928B0C00DA207C /* NetworkHandler.swift */; };
-		DEB37ED42B928B1600DA207C /* NetworkMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB37ED32B928B1600DA207C /* NetworkMiddleware.swift */; };
-		DEB37ED62B928B1E00DA207C /* Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB37ED52B928B1E00DA207C /* Promise.swift */; };
-		DEB37ED82B928B2900DA207C /* RequestExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB37ED72B928B2900DA207C /* RequestExtension.swift */; };
-		DEB37EDA2B928B3200DA207C /* URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB37ED92B928B3200DA207C /* URLRequestConvertible.swift */; };
-		DEB37EDC2B928B3A00DA207C /* BodyParameterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB37EDB2B928B3A00DA207C /* BodyParameterProtocol.swift */; };
 		DEB37EDE2B928BA900DA207C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB37EDD2B928BA900DA207C /* Constants.swift */; };
 		DEB37EE22B92922C00DA207C /* PlayingVideosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB37EE02B92922C00DA207C /* PlayingVideosViewController.swift */; };
 		DEB37EE32B92922C00DA207C /* PlayingVideosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEB37EE12B92922C00DA207C /* PlayingVideosViewController.xib */; };
@@ -60,21 +61,22 @@
 		65A8CBBD7D5B7CE26185523D /* Pods_BanquemisrChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BanquemisrChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7231B26DA25236CA410B6984 /* Pods-BanquemisrChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BanquemisrChallenge.release.xcconfig"; path = "Target Support Files/Pods-BanquemisrChallenge/Pods-BanquemisrChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		DE2B9A842B9493E400007E63 /* VideoDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDetailsViewModel.swift; sourceTree = "<group>"; };
+		DE514B1D2B951D2200535BAA /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		DE514B2A2B953A1900535BAA /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		DE514B2D2B953FAA00535BAA /* Encodable+Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+Dictionary.swift"; sourceTree = "<group>"; };
+		DE514B2F2B95408700535BAA /* NetworkClientType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientType.swift; sourceTree = "<group>"; };
+		DE514B312B9540B800535BAA /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		DE514B332B9543F400535BAA /* URLRequestConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestConvertible.swift; sourceTree = "<group>"; };
+		DE514B352B9544DA00535BAA /* VerifyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyResponse.swift; sourceTree = "<group>"; };
+		DE514B372B95482C00535BAA /* ServerErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerErrorResponse.swift; sourceTree = "<group>"; };
+		DE514B392B954F0000535BAA /* URLRequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestBuilder.swift; sourceTree = "<group>"; };
 		DE6697C12B94FED200C2F8AF /* PopularViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopularViewController.xib; sourceTree = "<group>"; };
 		DE6697C22B94FED200C2F8AF /* PopularViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopularViewController.swift; sourceTree = "<group>"; };
 		DE6697C62B95016A00C2F8AF /* VideosVMProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosVMProtocol.swift; sourceTree = "<group>"; };
 		DE707C142B926F3900F83BC7 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		DEB37EC02B9275BC00DA207C /* UpcomingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingViewController.swift; sourceTree = "<group>"; };
 		DEB37EC12B9275BC00DA207C /* UpcomingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UpcomingViewController.xib; sourceTree = "<group>"; };
-		DEB37ECB2B928AED00DA207C /* Future.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Future.swift; sourceTree = "<group>"; };
-		DEB37ECD2B928AF700DA207C /* FutureDecoded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FutureDecoded.swift; sourceTree = "<group>"; };
 		DEB37ECF2B928B0100DA207C /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
-		DEB37ED12B928B0C00DA207C /* NetworkHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHandler.swift; sourceTree = "<group>"; };
-		DEB37ED32B928B1600DA207C /* NetworkMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMiddleware.swift; sourceTree = "<group>"; };
-		DEB37ED52B928B1E00DA207C /* Promise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Promise.swift; sourceTree = "<group>"; };
-		DEB37ED72B928B2900DA207C /* RequestExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestExtension.swift; sourceTree = "<group>"; };
-		DEB37ED92B928B3200DA207C /* URLRequestConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestConvertible.swift; sourceTree = "<group>"; };
-		DEB37EDB2B928B3A00DA207C /* BodyParameterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyParameterProtocol.swift; sourceTree = "<group>"; };
 		DEB37EDD2B928BA900DA207C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		DEB37EE02B92922C00DA207C /* PlayingVideosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingVideosViewController.swift; sourceTree = "<group>"; };
 		DEB37EE12B92922C00DA207C /* PlayingVideosViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayingVideosViewController.xib; sourceTree = "<group>"; };
@@ -135,6 +137,21 @@
 				7231B26DA25236CA410B6984 /* Pods-BanquemisrChallenge.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		DE514B2C2B953F9300535BAA /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				DE514B2D2B953FAA00535BAA /* Encodable+Dictionary.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		DE514B3B2B9553C500535BAA /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 		DE6697B72B94FDA600C2F8AF /* TapBarScenes */ = {
@@ -198,15 +215,16 @@
 		DEB37ECA2B928A8D00DA207C /* Builder */ = {
 			isa = PBXGroup;
 			children = (
-				DEB37ECB2B928AED00DA207C /* Future.swift */,
-				DEB37ECD2B928AF700DA207C /* FutureDecoded.swift */,
+				DE514B2C2B953F9300535BAA /* Helper */,
+				DE514B1D2B951D2200535BAA /* HTTPMethod.swift */,
+				DE514B2A2B953A1900535BAA /* EndPoint.swift */,
+				DE514B392B954F0000535BAA /* URLRequestBuilder.swift */,
+				DE514B332B9543F400535BAA /* URLRequestConvertible.swift */,
 				DEB37ECF2B928B0100DA207C /* NetworkError.swift */,
-				DEB37ED12B928B0C00DA207C /* NetworkHandler.swift */,
-				DEB37ED32B928B1600DA207C /* NetworkMiddleware.swift */,
-				DEB37ED52B928B1E00DA207C /* Promise.swift */,
-				DEB37ED72B928B2900DA207C /* RequestExtension.swift */,
-				DEB37ED92B928B3200DA207C /* URLRequestConvertible.swift */,
-				DEB37EDB2B928B3A00DA207C /* BodyParameterProtocol.swift */,
+				DE514B2F2B95408700535BAA /* NetworkClientType.swift */,
+				DE514B312B9540B800535BAA /* NetworkClient.swift */,
+				DE514B352B9544DA00535BAA /* VerifyResponse.swift */,
+				DE514B372B95482C00535BAA /* ServerErrorResponse.swift */,
 			);
 			path = Builder;
 			sourceTree = "<group>";
@@ -265,6 +283,7 @@
 		DEEA3AB42B910DA7005B951F /* BanquemisrChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				DE514B3B2B9553C500535BAA /* Entities */,
 				DEB37EC92B928A7B00DA207C /* NetworkLayer */,
 				DEB37EF72B932E8000DA207C /* ReusableViews */,
 				DEEA3AFC2B913827005B951F /* Scenes */,
@@ -521,35 +540,36 @@
 			files = (
 				DEEA3AB62B910DA7005B951F /* AppDelegate.swift in Sources */,
 				DEB37EED2B929CE100DA207C /* VideoResponseModel.swift in Sources */,
+				DE514B3A2B954F0000535BAA /* URLRequestBuilder.swift in Sources */,
+				DE514B252B951D2200535BAA /* HTTPMethod.swift in Sources */,
 				DEEA3AFB2B913455005B951F /* Cellable.swift in Sources */,
-				DEB37ED42B928B1600DA207C /* NetworkMiddleware.swift in Sources */,
-				DEB37EDC2B928B3A00DA207C /* BodyParameterProtocol.swift in Sources */,
 				DEB37EDE2B928BA900DA207C /* Constants.swift in Sources */,
+				DE514B342B9543F400535BAA /* URLRequestConvertible.swift in Sources */,
 				DE707C152B926F3900F83BC7 /* TabBarController.swift in Sources */,
-				DEB37EDA2B928B3200DA207C /* URLRequestConvertible.swift in Sources */,
+				DE514B382B95482C00535BAA /* ServerErrorResponse.swift in Sources */,
 				DEEA3ADC2B91180B005B951F /* MainNavigationBar.swift in Sources */,
 				DEEA3AD62B9116C9005B951F /* MainNavigator.swift in Sources */,
+				DE514B362B9544DA00535BAA /* VerifyResponse.swift in Sources */,
+				DE514B2B2B953A1900535BAA /* EndPoint.swift in Sources */,
 				DEB37EE22B92922C00DA207C /* PlayingVideosViewController.swift in Sources */,
-				DEB37ECC2B928AED00DA207C /* Future.swift in Sources */,
-				DEB37ED82B928B2900DA207C /* RequestExtension.swift in Sources */,
 				DEEA3AD22B911687005B951F /* BaseNavigator.swift in Sources */,
 				DE6697C42B94FED200C2F8AF /* PopularViewController.swift in Sources */,
 				DEEA3AF22B912FA4005B951F /* BaseViewModel.swift in Sources */,
 				DEB37EC22B9275BC00DA207C /* UpcomingViewController.swift in Sources */,
+				DE514B302B95408700535BAA /* NetworkClientType.swift in Sources */,
+				DE514B322B9540B800535BAA /* NetworkClient.swift in Sources */,
 				DEEA3AF02B912F96005B951F /* BaseViewController.swift in Sources */,
 				DEEA3B092B914CED005B951F /* UIViewController.swift in Sources */,
 				DEEA3AF92B913349005B951F /* UITableView.swift in Sources */,
 				DEB37EF62B92A78000DA207C /* VideoTypeURL.swift in Sources */,
+				DE514B2E2B953FAA00535BAA /* Encodable+Dictionary.swift in Sources */,
 				DEEA3B032B91464A005B951F /* VideosViewModel.swift in Sources */,
 				DEB37EF42B92A3FE00DA207C /* UIImageViewExtension.swift in Sources */,
 				DEEA3B052B91482A005B951F /* UIView.swift in Sources */,
-				DEB37ECE2B928AF700DA207C /* FutureDecoded.swift in Sources */,
 				DEB37EF22B929DAE00DA207C /* VideoModel.swift in Sources */,
 				DEEA3B002B9139D5005B951F /* VideoDetailsViewController.swift in Sources */,
 				DEB37EE82B92943500DA207C /* VideosRepo.swift in Sources */,
 				DEB37ED02B928B0100DA207C /* NetworkError.swift in Sources */,
-				DEB37ED22B928B0C00DA207C /* NetworkHandler.swift in Sources */,
-				DEB37ED62B928B1E00DA207C /* Promise.swift in Sources */,
 				DEEA3B072B914C57005B951F /* AlertBuilder.swift in Sources */,
 				DE2B9A852B9493E400007E63 /* VideoDetailsViewModel.swift in Sources */,
 				DE6697C72B95016A00C2F8AF /* VideosVMProtocol.swift in Sources */,
