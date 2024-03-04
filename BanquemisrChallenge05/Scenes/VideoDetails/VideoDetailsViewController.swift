@@ -11,10 +11,10 @@ class VideoDetailsViewController: BaseViewController {
     
     let viewModel: VideoDetailsViewModel
     
-    @IBOutlet weak var posterImageView: UIImageView!
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var lastReleaseLabel: UILabel!
-    @IBOutlet weak var detailsLabel: UILabel!
+    @IBOutlet private weak var posterImageView: UIImageView!
+    @IBOutlet private weak var titleLabel: UILabel!
+    @IBOutlet private weak var lastReleaseLabel: UILabel!
+    @IBOutlet private weak var detailsLabel: UILabel!
     
     init(viewModel: VideoDetailsViewModel) {
         self.viewModel = viewModel
