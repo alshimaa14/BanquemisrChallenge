@@ -14,4 +14,5 @@ protocol VideosVMProtocol: BaseViewModelProtocol {
     func getVideos()
     func getVideoItem(at indexPath: IndexPath) -> VideoDataEntity?
     func navigateToVideoDetails(at indexPath: IndexPath)
+    func loadNextPage() 
 }

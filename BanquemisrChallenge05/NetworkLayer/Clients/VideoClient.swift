@@ -8,7 +8,7 @@
 import Foundation
 
 protocol VideoClientType {
-    func getVideos() async throws -> VideosResponse
+    func getVideos(with page: Int) async throws -> VideosResponse
 }
 
 struct VideoClient: VideoClientType {
@@ -20,8 +20,10 @@ struct VideoClient: VideoClientType {
         self.videoType = videoType
     }
     
-    func getVideos() async throws -> VideosResponse {
-        let request = URLRequestBuilder(path: videoType.getTypeBath)
+    func getVideos(with page: Int) async throws -> VideosResponse {
+        let urlParameters: [String: String] = ["page": "\(page)"]
+        let request = URLRequestBuilder(path: videoType.getTypeBath,
+                                        urlParameters: urlParameters)
         return try await client.sendRequest(request)
     }
     

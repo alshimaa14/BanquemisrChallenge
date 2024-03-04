@@ -10,7 +10,10 @@ import Combine
 
 class VideosViewModel: BaseViewModel {
     
-    @Published private var videos: [VideoDataEntity]?
+    @Published private var videosEntity: [VideoDataEntity]?
+    private var currentPage: Int = 1
+    private var totalPages:Int = 1
+    private var videosList: [VideoDataEntity] = []
     var navigator: MainNavigatorProtocol?
     private let repo: VideoRepoProtocol
     
@@ -23,29 +26,38 @@ class VideosViewModel: BaseViewModel {
 extension VideosViewModel: VideosVMProtocol {
     
     var numberOfVideosRows: Int {
-        return videos?.count ?? 0
+        return videosEntity?.count ?? 0
     }
     
     var videosPublisher: AnyPublisher<Bool, Never> {
-        $videos.compactMap({$0?.isEmpty})
+        $videosEntity.compactMap({$0?.isEmpty})
             .eraseToAnyPublisher()
     }
     
     func getVideoItem(at indexPath: IndexPath) -> VideoDataEntity? {
-        return videos?[indexPath.item]
+        return videosEntity?[indexPath.item]
     }
     
     func navigateToVideoDetails(at indexPath: IndexPath) {
-        guard let passedVideo = videos?[indexPath.row] else { return }
+        guard let passedVideo = videosEntity?[indexPath.row] else { return }
         navigator?.navigateTo(destination: .details(passedVideo))
+    }
+    
+    func loadNextPage() {
+        if currentPage < totalPages {
+            currentPage += 1
+            getVideos()
+        }
     }
     
     func getVideos() {
         Task {
             do {
                 indicator = .loading(userInterAction: false, hideView: false)
-                let data = try await repo.getVideoDataModel()
-                self.videos = data
+                let response = try await repo.getVideoDataModel(with: currentPage)
+                totalPages = response.totalPages
+                videosList.append(contentsOf: response.results)
+                videosEntity = videosList
                 indicator = .loaded
             } catch {
                 self.didFetchError(error)
